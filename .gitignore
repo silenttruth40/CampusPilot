@@ -1,13 +1,24 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
 
-# Ignore Python virtual environment
+# Python virtual environments
 backend/venv/
+venv/
+.venv/
 
-# Ignore Python virtual environment
-backend/venv/
+# Python cache files
+__pycache__/
+*.py[cod]
 
-# Ignore installed dependencies
-frontend/node_modules/
+# Node.js dependencies
 node_modules/
+frontend/node_modules/
 
-# Ignore generated build files
+# Build output
+dist/
 frontend/dist/
+
+# macOS files
+.DS_Store
